@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Image, Text } from '@tarojs/components'
 import { useInterval } from './utils'
-import './index.less'
+import './index.scss'
 
 export const Marquee = (props) => {
   const content = props.content
