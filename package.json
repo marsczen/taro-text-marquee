@@ -36,5 +36,8 @@
     "postcss": "^8.4.16",
     "rollup": "^2.78.1",
     "rollup-plugin-postcss": "^4.0.2"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
 }
