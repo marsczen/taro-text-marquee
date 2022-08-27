@@ -1,6 +1,6 @@
 {
   "name": "taro-text-marquee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "taro 滚动字幕效果",
   "main": "lib/index.js",
   "scripts": {
