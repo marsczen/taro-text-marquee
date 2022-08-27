@@ -1,7 +1,7 @@
 {
   "name": "taro-text-marquee",
   "version": "0.0.3",
-  "description": "taro 滚动字幕效果",
+  "description": "taro滚动字幕效果",
   "main": "lib/index.js",
   "scripts": {
     "build": "npx rollup --c rollup.config.js"
@@ -33,9 +33,11 @@
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@rollup/plugin-babel": "^5.3.1",
     "babel-preset-taro": "^3.5.4",
+    "node-sass": "^7.0.1",
     "postcss": "^8.4.16",
     "rollup": "^2.78.1",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.54.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

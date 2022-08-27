@@ -14,7 +14,7 @@ export function useInterval() {
 
   const fnRef = useLatest(fn)
 
-  const timerRef = useRef<number | NodeJS.Timer>()
+  const timerRef = useRef()
 
   useEffect(() => {
     if (!isNumber(delay) || delay < 0) return
