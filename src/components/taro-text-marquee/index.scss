@@ -1,0 +1,32 @@
+.marquee-container {
+    width: 100%;
+    .marquee-wrapper {
+      height: 34px;
+      overflow: hidden;
+      .marquee-vertical {
+        transform: translateY(0);
+        transition: transform 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  .marquee-vertical {
+    .marquee-vertical-item {
+      display: flex;
+      align-items: center;
+      line-height: 34px;
+      .icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+      .title {
+        font-family: PingFangSC-Medium;
+        font-size: 26px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
