@@ -29,7 +29,7 @@ class Demo extends React.Component {
           <Marquee content={marqueeData} direction="vertical" />
         </View>
         <View className="horizontal">
-          <Marquee content={marqueeData} direction="horizontal" width="5000" />
+          <Marquee content={marqueeData} direction="horizontal"/>
         </View>
       </View>
     )
