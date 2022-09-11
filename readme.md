@@ -2,6 +2,8 @@
 
 taro滚动字幕效果
 
+![此处输入图片的描述][1]
+
 ## Usage
 
 ```js
@@ -31,3 +33,6 @@ class Demo extends React.Component {
   }
 }
 ```
+
+
+  [1]: https://raw.githubusercontent.com/marsczen/taro-text-marquee/master/assets/img.gif
