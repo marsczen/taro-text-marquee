@@ -6,7 +6,7 @@ import "./index.scss";
 
 export const Marquee = (props) => {
   //vertical  纵向滚动
-  //horizontal 横向滚动
+  //horizontal 横向滚动 TODO 滚动条数
   const content = props.content;
   const [index, setIndex] = useState(-1);
   const [height, setHeight] = useState(1);
@@ -49,31 +49,47 @@ export const Marquee = (props) => {
   }, 2000);
 
   return (
-    <View className='marquee-container'>
-      <View className='marquee-wrapper'>
-        <View
-          className='marquee-vertical'
-          ref={marqueeVerticalRef}
-          id='marquee_vertical'
-          style={
-            "transform:" +
-            marqueeVerticalStyle.transform +
-            ";transition:" +
-            marqueeVerticalStyle.transition
-          }
-        >
-          {content.concat(content[0]).map((item, i) => (
-            <View key={`${item}-${i}`} className='marquee-vertical-item'>
-              {item?.icon && <Image className='icon' src={item.icon}></Image>}
-              <Text
-                className='title'
-                style={item.color ? { color: item.color } : {}}
-              >
-                {item.title}
-              </Text>
-            </View>
-          ))}
-        </View>
+    <View className="marquee-container">
+      <View className="marquee-wrapper">
+        {props.direction == "vertical" ? (
+          <View
+            className="marquee-vertical"
+            ref={marqueeVerticalRef}
+            id="marquee_vertical"
+            style={
+              "transform:" +
+              marqueeVerticalStyle.transform +
+              ";transition:" +
+              marqueeVerticalStyle.transition
+            }
+          >
+            {content.concat(content[0]).map((item, i) => (
+              <View key={`${item}-${i}`} className="marquee-vertical-item">
+                {item?.icon && <Image className="icon" src={item.icon}></Image>}
+                <Text
+                  className="title"
+                  style={item.color ? { color: item.color } : {}}
+                >
+                  {item.title}
+                </Text>
+              </View>
+            ))}
+          </View>
+        ) : (
+          <View className="marquee-horizontal" id="marquee_horizontal">
+            {content.concat(content[0]).map((item, i) => (
+              <View key={`${item}-${i}`} className="marquee-horizontal-item">
+                {item?.icon && <Image className="icon" src={item.icon}></Image>}
+                <Text
+                  className="title"
+                  style={item.color ? { color: item.color } : {}}
+                >
+                  {item.title}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
       </View>
     </View>
   );
