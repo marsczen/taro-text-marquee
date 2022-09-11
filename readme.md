@@ -3,7 +3,7 @@
 taro滚动字幕效果
 
 <p align="center">
-    <img width="300" src="https://raw.githubusercontent.com/marsczen/taro-text-marquee/master/assets/img.gif">
+    <img width="300" src="https://raw.githubusercontent.com/marsczen/taro-text-marquee/master/img.gif">
 </p>
 
 
